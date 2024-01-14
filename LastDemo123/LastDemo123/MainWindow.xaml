@@ -1,0 +1,50 @@
+﻿<Window x:Class="LastDemo123.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LastDemo123"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Регистрация" Grid.Row="0" Grid.Column="1" Margin="70,0,0,0"/>
+        
+        <TextBlock Text="Логин" Grid.Row="1" Grid.Column="1" Margin="60,50,0,0"/>
+        <TextBox Grid.Row="2" Grid.Column="1" Name="LoginBox"/>
+        
+        <TextBlock Text="Пароль" Grid.Row="3" Grid.Column="1" Margin="60,0,0,0"/>
+        <TextBox Grid.Row="4" Grid.Column="1" Name="PassBox"/>
+        
+        <TextBlock Text="Имя" Grid.Row="5" Grid.Column="1" Margin="60,0,0,0"/>
+        <TextBox Grid.Row="6" Grid.Column="1" Name="NameBox"/>
+        
+        <TextBlock Text="Фамилия" Grid.Row="7" Grid.Column="1" Margin="60,0,0,0"/>
+        <TextBox Grid.Row="8" Grid.Column="1" Name="SurnameBox"/>
+        <TextBlock  Grid.Row="9" Grid.Column="1" Margin="60,0,0,0" FontSize="20px">
+            <Hyperlink Click="Hyperlink_Click">
+                уже есть аккаунт?
+            </Hyperlink>
+        </TextBlock>
+        
+
+        <Button Grid.Row="10" Grid.Column="1" Content="Создать" Margin="0,60,0,0" Click="Button_Click"/>
+    </Grid>
+</Window>
